@@ -11,14 +11,17 @@ public class PathGenerate : MonoBehaviour
 
     //每走一步，一个cube，生成的环境素材和数量
     public bool plant = false;
-    int environ_num = 1;
+    public int environ_num = 2;
     public GameObject environ1;
     public GameObject environ2;
     public GameObject environ3;
-    //public GameObject environ1;
-    //public GameObject environ1;
-    //public GameObject environ1;
-    //public GameObject environ1;
+    public GameObject environ4;
+    public GameObject environ5;
+    public GameObject environ6;
+    public GameObject environ7;
+    public GameObject environ8;
+    public GameObject environ9;
+    public GameObject environ10;
 
     public GameObject[] trees ;
 
@@ -42,7 +45,12 @@ public class PathGenerate : MonoBehaviour
 
     private void initpots()
     {
-        trees = new GameObject[] {environ1, environ2, environ3 };
+        trees = new GameObject[] 
+        {
+            environ1, environ2, environ3, environ4,
+            environ5, environ6, environ7, environ8,
+            environ9, environ10
+        };
 
         for(int i= 0; i < 200; i++)
         {
@@ -87,9 +95,9 @@ public class PathGenerate : MonoBehaviour
             {
                 int tx = Random.Range(x - 20, x + 20);
                 int ty = Random.Range(y - 20, y + 20);
-                if (isFar(tx, ty, x1, y1, 10) && isFar(tx, ty, x2, y2, 8) && pots[tx, ty])
+                if (isFar(tx, ty, x1, y1, 10) && isFar(tx, ty, x2, y2, 10) && isFar(tx,ty, 160, 160, 12) && pots[tx, ty])
                 {
-                    Instantiate(trees[Random.Range(0, 3)], new Vector3(tx, 0, ty), Quaternion.identity);
+                    Instantiate(trees[Random.Range(0, 10)], new Vector3(tx, 0, ty), Quaternion.identity);
                 }
             }
         }
