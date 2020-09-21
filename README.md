@@ -25,9 +25,9 @@
 
 在平面中，起点和终点之间存在一个平行于坐标轴的矩形，且两点处于对角。我们的路径可以首先沿着对角线的方向走，在碰到边界而又没有到达终点范围时，走一次碰撞方向的反方向，并再次趋近终点，反复尝试直到到达终点。
 
-![草地路径1](./mdres/Snipaste_2020-09-20_16-51-44.png)
+![草地路径1](https://github.com/BIT-Kindergarten/PigApartmentFight/blob/master/mdres/Snipaste_2020-09-20_16-51-44.png)
 
-![草地路径1](./mdres/Snipaste_2020-09-20_16-52-01.png)
+![草地路径1](https://github.com/BIT-Kindergarten/PigApartmentFight/blob/master/mdres/Snipaste_2020-09-20_16-52-01.png)
 
 
 
@@ -37,11 +37,9 @@
 
 ​		1.调试（Debug.Log）出一个路径不会通过的大概区域，在区域内放置对象；
 
-![]()
-
 ​		2. 生成路径时记录每一块地板的位置，标记为false。路径完成之后，遍历每一块地板并在附近标记为true的地方放置对象。
 
-![草地植被1](./mdres/Snipaste_2020-09-20_16-50-28.png)
+![草地植被1](https://github.com/BIT-Kindergarten/PigApartmentFight/blob/master/mdres/Snipaste_2020-09-20_16-50-28.png)
 
-![草地植被1](![草地植被1](./mdres/Snipaste_2020-09-20_16-50-43.png)
+![草地植被1](https://github.com/BIT-Kindergarten/PigApartmentFight/blob/master/mdres/Snipaste_2020-09-20_16-50-43.png)
 
